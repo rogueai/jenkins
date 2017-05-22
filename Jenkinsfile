@@ -8,14 +8,14 @@ pipeline {
             echo 'Tigoddiri'
             
           },
-          "error": {
+          "Parallel Build": {
             echo 'Parallel Step'
             
           }
         )
       }
     }
-    stage('error') {
+    stage('Finalise') {
       steps {
         echo 'Done'
       }

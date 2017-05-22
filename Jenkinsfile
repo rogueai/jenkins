@@ -5,20 +5,17 @@ pipeline {
       steps {
         parallel(
           "Build": {
-            sh '''#/bin/bash
-
-echo "Tigoddiri"'''
             echo 'Tigoddiri'
             
           },
-          "": {
+          "error": {
             echo 'Parallel Step'
             
           }
         )
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         echo 'Done'
       }

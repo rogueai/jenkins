@@ -8,8 +8,8 @@ pipeline {
             echo 'Tigoddiri'
             
           },
-          "Parallel Build": {
-            echo 'Parallel Step'
+          "SP2010": {
+            echo 'SP2010'
             
           }
         )
